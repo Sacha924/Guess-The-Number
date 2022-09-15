@@ -19,10 +19,10 @@ fn main() {
     let guess_u32 : u32 = guess.trim().parse().expect("Please type a number!");
 
     if secret_number > guess_u32{
-        println!("Too big");
+        println!("Too small");
     }
     else if secret_number < guess_u32{
-        println!("Too small");
+        println!("Too big");
     }
     else {
         println!("You win");
